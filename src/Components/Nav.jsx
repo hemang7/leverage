@@ -12,37 +12,37 @@ const Nav = () => {
   const content = (
     <div className="lg:hidden block absolute top-16 w-full bg-black left-0 right-0 transition">
       <ul className="text-center text-xl p-20">
-        <Link spy={true} smooth={true} to="Home">
+        <Link   to="Home">
           <li className="my-4 py-4 border-b text-white border-slate-800 hover:bg-slate-800 hover:rounded">
             Study Abroad
           </li>
         </Link>
-        <Link spy={true} smooth={true} to="About">
+        <Link   to="About">
           <li className="my-4 py-4 border-b border-slate-800 hover:bg-slate-800 hover:rounded">
-            Accomodation
+            Accommodation
           </li>
         </Link>
-        <Link spy={true} smooth={true} to="Services">
+        <Link   to="Services">
           <li className="my-4 py-4 border-b border-slate-800 hover:bg-slate-800 hover:rounded">
             Test Prep
           </li>
         </Link>
-        <Link spy={true} smooth={true} to="Projects">
+        <Link   to="Projects">
           <li className="my-4 py-4 border-b border-slate-800 hover:bg-slate-800 hover:rounded">
             Finance
           </li>
         </Link>
-        <Link spy={true} smooth={true} to="Contact">
+        <Link   to="Contact">
           <li className="my-4 py-4 border-b border-slate-800 hover:bg-slate-800 hover:rounded">
             Community
           </li>
         </Link>
-        <Link spy={true} smooth={true} to="Contact">
+        <Link   to="Contact">
           <li className="my-4 py-4 border-b border-slate-800 hover:bg-slate-800 hover:rounded">
             Products
           </li>
         </Link>
-        <Link spy={true} smooth={true} to="Contact">
+        <Link   to="Contact">
           <li className="my-4 py-4 border-b border-slate-800 hover:bg-slate-800 hover:rounded">
             More
           </li>
@@ -63,37 +63,37 @@ const Nav = () => {
         </div>
         <div className="lg:flex md:flex lg:flex-1 items-center justify-end font-normal hidden">
           <ul className="flex gap-8 mr-16 text-[16px] whitespace-nowrap">
-            <Link spy={true} smooth={true} to="Home">
+            <Link   to="Home">
               <li className="hover:text-blue-600 transition hover:border-blue-600 cursor-pointer">
                 Study Abroad
               </li>
             </Link>
-            <Link spy={true} smooth={true} to="About">
+            <Link   to="About">
               <li className="hover:text-blue-600 transition  hover:border-blue-600 cursor-pointer">
                 Accomodation
               </li>
             </Link>
-            <Link spy={true} smooth={true} to="Services">
+            <Link   to="Services">
               <li className="hover:text-blue-600 transition  hover:border-blue-600 cursor-pointer">
                 Test Prep
               </li>
             </Link>
-            <Link spy={true} smooth={true} to="Projects">
+            <Link   to="Projects">
               <li className="hover:text-blue-600 transition  hover:border-blue-600 cursor-pointer">
                 Finance
               </li>
             </Link>
-            <Link spy={true} smooth={true} to="Contact">
+            <Link   to="Contact">
               <li className="hover:text-blue-600 transition hover:border-blue-600 cursor-pointer">
                 Community
               </li>
             </Link>
-            <Link spy={true} smooth={true} to="Contact">
+            <Link   to="Contact">
               <li className="hover:text-blue-600 transition hover:border-blue-600 cursor-pointer">
                 Products
               </li>
             </Link>
-            <Link spy={true} smooth={true} to="Contact">
+            <Link  to="Contact">
               <li className="hover:text-blue-600 transition hover:border-blue-600 cursor-pointer">
                 More
               </li>
