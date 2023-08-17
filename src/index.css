@@ -1,0 +1,71 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  body{
+    background: #06234a;
+    font-family: Rubik;
+  }
+
+  .navColor{
+    background: #041529;
+  }
+ 
+  .slider {
+    margin:0 20px;
+    overflow:"hidden";
+    padding:2rem 0;
+  }
+ 
+  .slider img {
+    width: 100%;
+    border-radius:10px;
+  }
+ 
+  .react-multi-carousel-list {
+  padding: 0rem 0 2rem 0;
+  }
+ 
+  .custom-dot-list-style button{
+  border: none;
+  background: rgb(255, 68, 68);
+  }
+  .react-multi-carousel-dot.react-multi-carousel-dot--active button{
+  background: rgb(255, 68, 68) !important;
+  }
+
+/* Slider.css */
+
+.carousel-item {
+    position: relative;
+    padding: 5px;
+    margin: 10px;
+    transition: all 0.3s ease;
+    width: 80%; /* Adjust this width to increase/decrease item size */
+    margin: 0 auto; /* Center the items horizontally */
+  }
+ 
+  .thumbnail {
+    position: relative;
+    cursor: pointer;
+    transition: transform 0.3s ease; /* Add a transition for smooth animation */
+  }
+ 
+  .thumbnail.active {
+    transform: scale(1.2); /* Scale the active thumbnail */
+  }
+ 
+  .video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
