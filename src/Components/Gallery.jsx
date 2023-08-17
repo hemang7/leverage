@@ -50,7 +50,7 @@ const Slider = () => {
   };
 
   return (
-    <div className="parent" style={{ marginTop: "200px" }}>
+    <div className="parent" style={{ marginTop: "120px" }}>
       <Carousel
         responsive={responsive}
         autoPlay={false}
@@ -60,20 +60,10 @@ const Slider = () => {
         infinite={true}
         partialVisible={false}
         dotListClass="custom-dot-list-style"
-        beforeChange={(oldIndex, newIndex) => {
-          // Check if a video is active
+        beforeChange={() => {
+          
           if (activeVideoIndex !== null) {
-            // Pause the video
-            const iframe = document.getElementById(
-              `iframe-${activeVideoIndex}`
-            );
-            if (iframe) {
-              iframe.contentWindow.postMessage(
-                '{"event":"command","func":"pauseVideo","args":""}',
-                "*"
-              );
-            }
-            setActiveVideoIndex(null); // Clear the active video index
+            setActiveVideoIndex(null); 
           }
         }}
       >
@@ -85,7 +75,6 @@ const Slider = () => {
                 className={`thumbnail ${
                   activeVideoIndex === index ? "video" : ""
                 }`}
-               
                 onClick={() => handleThumbnailClick(index)}
               >
                 {activeVideoIndex === index ? (
